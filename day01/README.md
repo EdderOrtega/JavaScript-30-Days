@@ -1,6 +1,9 @@
+Proyecto 1
+=========
 
-#Proyecto #1
-##Creando musica tocando teclas (piano virtual)
+Creando música tocando teclas (piano virtual)
+----------------------------------------------
+
 
 en este proyecto se reproduce un sonido musical al teclear alguna de las teclas que aparecen en la pantalla  
 usando solo javascript puro (vanilla),css y html.  
