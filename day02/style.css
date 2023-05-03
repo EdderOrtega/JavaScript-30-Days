@@ -1,0 +1,136 @@
+html {
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 35rem;
+    height: 35rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); 
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.56,1);
+}
+.second-hand{
+    background-color: red;
+}
+.hour-hand{
+    background-color: yellow;
+}
+.minute-hand{
+    background-color: green;
+}
+/*digital clock*/
+.container-digital{
+    width: 35rem;
+    height: 35rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    color: crimson;
+}
+.digital-clock{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0;
+}
+.digital-clock > div{
+    font-size: 5rem;
+    width: 12rem;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(6, 2, 2);
+}
+.digital-calendar{
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-right:30px;
+    margin-bottom: 8rem;
+    height: 30px;
+}
+.digital-calendar > div{
+    justify-content: center;
+    width: 6.5rem;
+    margin: 0px;
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(6, 2, 2);
+}
+/*responsive */
+@media screen and (max-width: 480px) {
+    body{
+        display: grid;
+    }
+    .clock{
+        border: 10px solid white;
+        width: 20rem;
+        height:20rem;
+    }
+    .container-digital{
+        width: 20rem;
+        height: 20rem;
+        border: 10px solid white;
+    }
+
+    .digital-clock > div{
+        font-size: 3rem;
+        width: 10rem;
+        margin-bottom: 100px;
+    }
+    .digital-calendar{
+        margin-top: 30px;
+        margin-right:15px;
+        margin-bottom: 8rem;
+        height: 30px;
+    }
+    .digital-calendar > div{
+        width: 5rem;
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body{
+        display: grid;
+    }
+}
